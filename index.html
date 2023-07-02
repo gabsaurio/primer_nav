@@ -7,16 +7,117 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="img/logo.png" alt="mi_logo" class="logo" />
-        <ul class="nav">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Mi porfolio</a></li>
-          <li><a href="#">Clientes</a></li>
-          <li><a href="#">Contacto</a></li>
+    <header class="header">
+      <img src="./assets/img/logo.png" alt="mi_logo" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar-List">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#mas-sobre">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="hero" id="hero">
+        <div><img src="./assets/img/fondo.png" alt="" /></div>
+        <div class="bio">
+          <h2>Sobre Mí</h2>
+          <p class="bio-texto">
+            Soy <span>Gabriel Weber</span>, un apasionado Junior Developer Full
+            Stack. Mi objetivo es construir soluciones web completas y
+            funcionales que brinden una experiencia excepcional a los usuarios.
+            Con una sólida formación en desarrollo web y entusiasmo por aprender
+            nuevas tecnologías, me dedico a dominar tanto el desarrollo frontend
+            como el backend. Mi experiencia abarca HTML, CSS, JavaScript, así
+            como frameworks populares como React.js en el frontend, y Node.js y
+            MongoDB en el backend.
+          </p>
+        </div>
+      </section>
+
+      <section class="mas-sobre" id="mas-sobre">
+        <h2>Más sobre mí</h2>
+        <p>
+          Soy curioso y apasionado por estar al tanto de las últimas tendencias
+          y mejores prácticas en el desarrollo web. Siempre estoy abierto a
+          nuevas oportunidades y a expandir mis conocimientos técnicos.
+        </p>
+        <p>
+          Además de mi experiencia técnica, soy un comunicador efectivo y tengo
+          habilidades para resolver problemas. Mi objetivo es entregar
+          soluciones de alta calidad, optimizadas y eficientes.
+        </p>
+        <p>
+          Estoy listo para contribuir a proyectos emocionantes y sumergirme en
+          el mundo del desarrollo web. Si estás buscando un Junior Developer
+          Full Stack comprometido, creativo y orientado al aprendizaje, ¡espero
+          tener la oportunidad de trabajar contigo y contribuir a tu éxito en el
+          mundo digital!
+        </p>
+      </section>
+
+      <section class="habilidades" id="habilidades">
+        <h2>Mis mejores habilidades</h2>
+        <div class="contenedor-skill">
+          <img src="./assets/icon/html5-2.svg" alt="" class="icon icon-card" />
+          <img src="./assets/icon/css.svg" alt="" class="icon icon-card" />
+          <img src="./assets/icon/js.svg" alt="" class="icon icon-card" />
+        </div>
+        <div class="contenedor-skill">
+          <img src="./assets/icon/react.svg" alt="" class="icon icon-card" />
+          <img src="./assets/icon/node.svg" alt="" class="icon icon-card" />
+          <img src="./assets/icon/git.svg" alt="" class="icon icon-card" />
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto">
+        <h2>Contactate conmigo</h2>
+        <div class="formulario-contacto-contenedor">
+          <div class="formulario-contecto">
+            <form action="">
+              <div class="control-formulario">
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Escribe tu nombre"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="contro-formulario">
+                <label for="email">Correo Electronico</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Ingrese su correo electronico"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="control-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  cols="60"
+                  rows="10"
+                  placeholder="Escribe tu mensaje"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Enviar"
+                id="submid-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

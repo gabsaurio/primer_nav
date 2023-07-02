@@ -1,7 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --background: #f8f8f8;
+  --primary: #4756df;
+  --secondary: #ff7235;
+
+  /* Textos */
+  --text-gray: #333333;
+  --text-blue: #3498db;
+
+  /* shadow  */
+  --shadow: #a17a69;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--secondary);
 }
 
 body {
@@ -9,31 +33,157 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-nav {
-  height: 30px;
+.header {
+  height: 80px;
+  width: 100%;
+  padding: 8px 50px;
+  position: sticky;
+  z-index: 1;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: #aaebff;
+  justify-content: space-between;
+  background-color: var(--background);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 0px 20px;
 }
-.logo {
-  background: url(img/logo.png) no-repeat center/cover;
-  display: left;
-  width: 30px;
-  height: 30px;
-}
-ul {
-  list-style: none;
+
+.navbar ul {
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }
 
-ul a {
-  color: white;
-  text-decoration: none;
-  font-size: 10px;
+.header img {
+  height: 80%;
 }
 
-ul li:hover {
-  background: #ff7697;
+.navbar-List {
+  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.hero img {
+  height: 500px;
+}
+
+.bio {
+  width: 400px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary);
+}
+
+.bio h1 {
+  margin-bottom: 8px;
+}
+
+.bio p {
+  line-height: 27px;
+  padding: 5px 0;
+}
+
+.mas-sobre {
+  /* background-color: var(--background); */
+  padding: 16px 96px;
+}
+
+.mas-sobre h2 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.mas-sobre p {
+  line-height: 27px;
+  padding: 6px;
+}
+
+.habilidades {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+}
+.habilidades h2 {
+  margin-top: 16px;
+}
+
+.contenedor-skill img {
+  padding: 20px;
+  /* posible retoque */
+}
+.icon {
+  width: 180px;
+}
+
+.icon-card {
+  background-color: var(--background);
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.contacto {
+  margin-top: 32px;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.formulario-contacto-contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--shadow);
+}
+
+.formulario-contacto-contenedor label {
+  line-height: 43px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.formulario-contacto-contenedor textarea {
+  min-height: 100px;
+  font-size: 14px;
+}
+
+.formulario-contacto-contenedor .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: 2px outset var(--primary);
+  font-size: 14px;
+}
+
+.input-field::placeholder {
+  padding: 8px;
+  color: var(--primary);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.submit-btn:hover {
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  cursor: pointer;
 }
