@@ -44,12 +44,24 @@ body {
   justify-content: space-between;
   background-color: var(--background);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  padding: 0px 20px;
 }
 
 .navbar ul {
   display: flex;
   gap: 50px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar i {
+  font-size: 36px;
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
 }
 
 .header img {
@@ -110,7 +122,7 @@ body {
   margin-top: 40px;
 }
 .habilidades h2 {
-  margin-top: 16px;
+  margin: 10px 0;
 }
 
 .contenedor-skill img {
@@ -186,4 +198,89 @@ body {
   background-color: var(--primary);
   border: 2px solid var(--primary);
   cursor: pointer;
+}
+
+footer {
+  background-color: var(--background);
+  padding: 20px;
+  text-align: center;
+  margin: 32px 0 0;
+}
+.footer-logo img {
+  height: 50px;
+}
+
+@media (max-width: 720px) {
+  .navbar ul {
+    background: var(--background);
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .navbar i {
+    display: block;
+  }
+  #toggle-menu:checked ~ .navbar-List {
+    display: flex;
+  }
+
+  .hero {
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .hero img {
+    height: 500px;
+  }
+
+  .bio {
+    margin-top: -70px;
+    width: 500px;
+  }
+  .bio h2 {
+    text-align: center;
+  }
+
+  .mas-sobre {
+    margin-top: 32px;
+    padding: 16px 56px;
+  }
+
+  .mas-sobre h2 {
+    text-align: center;
+  }
+
+  .mas-sobre p {
+    text-align: justify;
+  }
+
+  .icon {
+    /* height: 85px; */
+    width: 80px;
+  }
+  .formulario-contacto-contenedor {
+    max-width: 380px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero img {
+    height: 600px;
+    width: 368px;
+  }
+
+  .bio {
+    width: 290px;
+  }
+
+  .formulario-contacto-contenedor {
+    max-width: 284px;
+  }
 }
